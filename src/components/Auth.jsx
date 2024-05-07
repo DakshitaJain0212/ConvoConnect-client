@@ -41,8 +41,7 @@ const Auth = () => {
   
     try {
       const { username, password, phoneNumber, avatarURL } = form;
-      const URL = "http://localhost:5000/auth";
-      // const URL = 'https://medical-pager.herokuapp.com/auth';
+      const URL = "https://convo-connect-server.vercel.app";
   
       const data = await axios.post(
         `${URL}/${isSignup ? "signup" : "login"}`,
